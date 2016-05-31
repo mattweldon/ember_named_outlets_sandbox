@@ -1,3 +1,12 @@
 <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+<ul>
+  <li>{{#link-to 'page-a'}}Page A{{/link-to}}</li>
+  <li>{{#link-to 'page-b'}}Page B{{/link-to}}</li>
+</ul>
+
+{{ outlet "header" }}
+
+<hr>
+
+{{ outlet }}
